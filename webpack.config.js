@@ -30,7 +30,8 @@ module.exports = {
     new ExtractTextWebpackPlugin('[name].css'),
     new HtmlWebpackPlugin({
       title: 'copybot',
-      filename: 'index.html'
+      filename: 'index.html',
+      template: 'custom-html.ejs'
     }),
     new webpack.DefinePlugin({
       '__DEVELOPMENT__': true,

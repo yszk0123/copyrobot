@@ -15,7 +15,7 @@
   padding: 1.2rem;
   border-radius: 8px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   z-index: 0;
 
   margin-right: 10px;
@@ -46,7 +46,7 @@
   padding: 1.2rem;
   border-radius: 8px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   z-index: 0;
 
   margin-left: 10px;
@@ -76,7 +76,7 @@
   background-image: url('/images/male.png');
 
   /* TODO: Remove */
-  background: lightgray;
+  /* background: lightgray; */
 }
 
 .FemaleIcon {
@@ -90,5 +90,5 @@
   background-image: url('/images/female.png');
 
   /* TODO: Remove */
-  background: lightgray;
+  /* background: lightgray; */
 }

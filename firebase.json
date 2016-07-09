@@ -11,6 +11,12 @@
       "firebase.json",
       "database.rules.json",
       "storage.rules"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

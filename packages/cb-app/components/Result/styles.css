@@ -1,0 +1,6 @@
+.Result {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: #4bd;
+  padding: 1.5rem;
+}
