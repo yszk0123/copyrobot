@@ -1,0 +1,94 @@
+.CommentLine {
+  display: block;
+  overflow: hidden;
+}
+
+.SelfCommentSet {
+  display: inline-block;
+  float: right;
+}
+
+.SelfComment {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 0;
+
+  margin-right: 10px;
+  background: #4c4;
+}
+
+.SelfArrow {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #4c4;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.OtherCommentSet {
+  display: inline-block;
+  float: left;
+}
+
+.OtherComment {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 0;
+
+  margin-left: 10px;
+  background: lightgray;
+}
+
+.OtherArrow {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid lightgray;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.MaleIcon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  border-radius: 20px;
+
+  background-image: url('/images/male.png');
+
+  /* TODO: Remove */
+  background: lightgray;
+}
+
+.FemaleIcon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  border-radius: 20px;
+
+  background-image: url('/images/female.png');
+
+  /* TODO: Remove */
+  background: lightgray;
+}

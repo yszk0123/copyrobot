@@ -16,7 +16,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
-    publicPath: '/assets/'
+    publicPath: '/'
   },
   resolve: {
     root: [
@@ -30,7 +30,7 @@ module.exports = {
     new ExtractTextWebpackPlugin('[name].css'),
     new HtmlWebpackPlugin({
       title: 'copybot',
-      filename: 'app.html'
+      filename: 'index.html'
     }),
     new webpack.DefinePlugin({
       '__DEVELOPMENT__': true,
@@ -55,6 +55,14 @@ module.exports = {
           "postcss-loader"
         ),
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextWebpackPlugin.extract(
+          "style-loader",
+          "css-loader"
+        ),
+        include: /node_modules/
       },
       {
         test: /\.json?$/,
