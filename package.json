@@ -1,0 +1,36 @@
+{
+  "name": "copyrobot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "deploy": "npm run build && cd public && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yszk0123/copyrobot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yszk0123/copyrobot/issues"
+  },
+  "homepage": "https://github.com/yszk0123/copyrobot#readme",
+  "dependencies": {
+    "axios": "^0.12.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.9.0",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.13.1"
+  }
+}
