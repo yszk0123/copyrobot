@@ -49,7 +49,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextWebpackPlugin.extract('style-loader', 'css-loader'),
+        loader: ExtractTextWebpackPlugin.extract(
+          "style-loader",
+          "css-loader?modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]",
+          "postcss-loader"
+        ),
         exclude: /node_modules/
       },
       {
