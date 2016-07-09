@@ -1,5 +1,4 @@
 import axios from 'axios';
-// import request from 'request-promise';
 import fs from 'fs';
 import config from './config';
 const MALE = 'male';
