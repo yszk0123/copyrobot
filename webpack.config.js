@@ -11,10 +11,10 @@ module.exports = {
     __dirname: false
   },
   entry: {
-    'app': './packages/cb-app'
+    'app': './packages/cb-app/index'
   },
   output: {
-    path: path.join(__dirname, 'public/build'),
+    path: path.join(__dirname, 'dist'),
     filename: '[name].js',
     publicPath: '/assets/'
   },
@@ -45,7 +45,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader?cacheDirectory',
-        include: /node_modules/
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
