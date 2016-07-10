@@ -21,6 +21,6 @@ end
 file_name = "only_talk.txt"
 File.open(file_name, 'w') {|file|
   talk.each do |sentence|
-     file.write sentence+"\n"
+     file.write sentence+" "
   end
 }
