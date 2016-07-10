@@ -1,0 +1,1 @@
+curl -u "{username}":"{password}" -H "Content-Type: application/json" -d "{\"text\": \"aaaaaaaa\"}" "https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2016-05-19"  > tone-analyzer-output.json
